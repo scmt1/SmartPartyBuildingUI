@@ -1,0 +1,9 @@
+target
+.idea
+*.iml
+*.svn
+logs
+/bsin-ui-dwgl/node_modules
+/zhdj/node_modules
+package-lock.json
+*.git_bak

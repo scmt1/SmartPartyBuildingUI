@@ -1,0 +1,13 @@
+打包：
+docker build -t harbor.lzjczl.com/insurance/insurance_java:版本号 .
+推送：
+docker push harbor.lzjczl.com/insurance/insurance_java:版本号
+删除镜像
+docker rmi harbor.lzjczl.com/insurance/insurance_java:版本号
+
+
+docker build -t harbor.lzjczl.com/sk-paas/bsin-ui-tzgl:0.0.9  -f ./docker/Dockerfile .
+docker push harbor.lzjczl.com/sk-paas/bsin-ui-tzgl:0.0.9
+
+docker build -t 10.4.117.31:7090/sk-paas/bsin-ui-tzgl:0.1.4.release  -f ./docker/Dockerfile .
+docker push 10.4.117.31:7090/sk-paas/bsin-ui-tzgl:0.1.4.release
