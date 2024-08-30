@@ -1,0 +1,19 @@
+{
+    "id": "da-tree-vue2",
+    "name": "da-tree 树组件（支持单选、多选、无限级，Vue2版）",
+    "displayName": "da-tree 树组件（支持单选、多选、无限级，Vue2版）",
+    "version": "1.2.0",
+    "description": "一个基于 Vue2 的tree(树)组件，可能是最适合你的tree(树)组件",
+    "keywords": [
+        "tree",
+        "树",
+        "树组件",
+        "da系列"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

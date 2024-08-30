@@ -1,0 +1,101 @@
+<template>
+  <view class="section-swiper">
+		<view class="type-box">
+			<view class="type" v-for="(item, index) in config" :key="index" @click="current = index">
+				<view class="text">{{ item.name }}</view>
+				<view :class="current == index?'icon':''"></view>
+			</view>
+		</view>
+    <!-- <u-subsection
+      :list="config"
+      :current="current"
+      bgColor="#fff"
+      activeColor="#E1351B"
+      fontSize="34rpx"
+      @change="changeCurrent"
+    ></u-subsection> -->
+    <view class="list">
+      <swiper :current="current" @change="changeSwiperCurrent">
+        <swiper-item v-for="(item, index) in config" :key="index">
+          <slot :name="item.slot"></slot>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</template>
+
+<script>
+export default {
+  name: 'j-section-swiper',
+  props: ['config'],
+  data() {
+    return {
+      current: 0,
+    }
+  },
+  mounted() {
+    // console.log('data', this.list)
+  },
+  methods: {
+    changeCurrent(idx) {
+      this.current = idx
+    },
+    changeSwiperCurrent(e) {
+      this.current = e.detail.current
+    },
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.section-swiper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+	.type-box {
+		display: flex;
+		justify-content: center;
+
+		.type {
+			display: flex;
+			flex-direction: column;
+			margin: 20rpx;
+			text-align: center;
+			font-size: 34rpx;
+			font-weight: 700;
+
+			.text {
+				margin-bottom: 10rpx;
+			}
+
+			.icon {
+				margin: auto;
+				background: rgba(225, 53, 27, 1);
+				height: 4rpx;
+				width: 60rpx;
+				border-radius: 4rpx;
+				transition: all 0.2s ease-in;
+			}
+		}
+	}
+
+  .list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    ::v-deep uni-swiper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      .uni-swiper-wrapper {
+        flex: 1;
+      }
+      uni-swiper-item {
+        overflow-y: scroll;
+      }
+    }
+  }
+}
+</style>

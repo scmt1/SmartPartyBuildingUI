@@ -1,0 +1,545 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+    "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+    "^j-(.*)": "@/components/j-$1/j-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/Home/Home",
+      "style": {
+        "navigationBarTitleText": "酒城智慧机关党建",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+		{
+		  "path": "pages/Home/more",
+		  "style": {
+		    "navigationBarTitleText": "更多应用",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+    {
+      "path": "pages/Application/Application",
+      "style": {
+        "navigationBarTitleText": "应用",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/Study/Study",
+      "style": {
+        "navigationBarTitleText": "党建学习",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/User/User",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+		{
+		  "path": "pages/User/login",
+		  "style": {
+		    "navigationBarTitleText": "登录",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/xxqg",
+		  "style": {
+		    "navigationBarTitleText": "学习强国",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/personalData",
+		  "style": {
+		    "navigationBarTitleText": "个人资料管理",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		/* {
+		  "path": "pages/User/ChangePhone/index",
+		  "style": {
+		    "navigationBarTitleText": "更改手机号码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePhone/oldPassword",
+		  "style": {
+		    "navigationBarTitleText": "更改手机号码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePhone/newPhone",
+		  "style": {
+		    "navigationBarTitleText": "更改手机号码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePhone/inputCode",
+		  "style": {
+		    "navigationBarTitleText": "更改手机号码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePhone/changeSuccess",
+		  "style": {
+		    "navigationBarTitleText": "更改手机号码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePassword/index",
+		  "style": {
+		    "navigationBarTitleText": "更改密码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePassword/oldPassword",
+		  "style": {
+		    "navigationBarTitleText": "更改密码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePassword/newPassword",
+		  "style": {
+		    "navigationBarTitleText": "更改密码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePassword/inputCode",
+		  "style": {
+		    "navigationBarTitleText": "更改密码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/User/ChangePassword/changeSuccess",
+		  "style": {
+		    "navigationBarTitleText": "更改密码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		{
+		  "path": "pages/User/Honor/index",
+		  "style": {
+		    "navigationBarTitleText": "个人荣誉管理",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/PublicProclamation/index",
+		  "style": {
+		    "navigationBarTitleText": "公示公告",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+    {
+      "path": "pages/BranchOverview/index",
+      "style": {
+        "navigationBarTitleText": "支部概况",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+		{
+		  "path": "pages/OrganizationLife/index",
+		  "style": {
+		    "navigationBarTitleText": "三会一课",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/OrganizationLife/initiate",
+		  "style": {
+		    "navigationBarTitleText": "发起会议",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/OrganizationLife/details",
+		  "style": {
+		    "navigationBarTitleText": "会议详情",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/PoliticalBirthday/index",
+		  "style": {
+		    "navigationBarTitleText": "政治生日",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		/* {
+		  "path": "pages/Vote/index",
+		  "style": {
+		    "navigationBarTitleText": "投票活动",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		{
+		  "path": "pages/CostPayment/index",
+		  "style": {
+		    "navigationBarTitleText": "党费交纳",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/CostPayment/replaceCost/replaceCostIndex",
+		  "style": {
+		    "navigationBarTitleText": "党费代缴",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+	  {
+		  "path": "pages/CostPayment/proxyPayment/proxyCostIndex",
+		  "style": {
+			  "navigationBarTitleText": "党费代缴",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  },
+	  	{
+		  "path": "pages/CostPayment/feeCard",
+		  "style": {
+			  "navigationBarTitleText": "党费证",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  	},
+		/* {
+		  "path": "pages/Vote/voteDetails",
+		  "style": {
+		    "navigationBarTitleText": "活动详情",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		{
+		  "path": "pages/Honor/index",
+		  "style": {
+		    "navigationBarTitleText": "党内荣誉",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/PartyMemberOutflow/index",
+		  "style": {
+		    "navigationBarTitleText": "党员流出",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/PartyMemberDeptTransfer/index",
+		  "style": {
+		    "navigationBarTitleText": "组织关系转接",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/PartyMemberDeptTransfer/transferLog",
+		  "style": {
+		    "navigationBarTitleText": "转接记录",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/SpecialReport/index",
+		  "style": {
+		    "navigationBarTitleText": "专题报道",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/SpecialReport/details",
+		  "style": {
+		    "navigationBarTitleText": "专题报道",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+    /* {
+      "path": "pages/Credit/Details",
+      "style": {
+        "navigationBarTitleText": "学分明细",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    }, */
+    {
+      "path": "pages/Lessons/OnlineLessons",
+      "style": {
+        "navigationBarTitleText": "在线课程",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/Lessons/GraphicLessonsList",
+      "style": {
+        "navigationBarTitleText": "课程列表",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/Lessons/GraphicLessonsInfo",
+      "style": {
+        "navigationBarTitleText": "课程内容",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/Lessons/VideoLessonsList",
+      "style": {
+        "navigationBarTitleText": "课程列表",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/Lessons/VideoLessonsInfo",
+      "style": {
+        "navigationBarTitleText": "课程内容",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    /* {
+      "path": "pages/Answer/SpecialAnswer",
+      "style": {
+        "navigationBarTitleText": "专项答题",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    }, */
+    /* {
+      "path": "pages/Answer/AnswerIntroduce",
+      "style": {
+        "navigationBarTitleText": "专项答题",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    }, */
+		/* {
+		  "path": "pages/Answer/SingleChoice",
+		  "style": {
+		    "navigationBarTitleText": "专项答题",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		/* {
+		  "path": "pages/Answer/TrueOrFalseQuestions",
+		  "style": {
+		    "navigationBarTitleText": "专项答题",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		/* {
+		  "path": "pages/Answer/MultipleChoice",
+		  "style": {
+		    "navigationBarTitleText": "专项答题",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		/* {
+		  "path": "pages/Answer/AnswerResult",
+		  "style": {
+		    "navigationBarTitleText": "答题结果",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		/* {
+		  "path": "pages/Answer/Resolution/ResolutionSingleChoice",
+		  "style": {
+		    "navigationBarTitleText": "专项答题",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		/* {
+		  "path": "pages/Answer/Resolution/ResolutionTrueOrFalseQuestions",
+		  "style": {
+		    "navigationBarTitleText": "专项答题",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		/* {
+		  "path": "pages/Answer/Resolution/ResolutionMultipleChoice",
+		  "style": {
+		    "navigationBarTitleText": "专项答题",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		{
+		  "path": "pages/NewsBulletin/index",
+		  "style": {
+		    "navigationBarTitleText": "新闻动态",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		{
+		  "path": "pages/NewsBulletin/details",
+		  "style": {
+		    "navigationBarTitleText": "新闻内容",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		},
+		/* {
+		  "path": "pages/User/ChangePhone/inputCodeByOldPhone",
+		  "style": {
+		    "navigationBarTitleText": "更改手机号码",
+		    "enablePullDownRefresh": false,
+		    "navigationStyle": "custom"
+		  }
+		}, */
+		{
+			"path": "pages/Spectaculars/index",
+			"style": {
+			  "navigationBarTitleText": "手机看板",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+			}
+		},
+	  {
+		  "path": "pages/video/index",
+		  "style": {
+			  "navigationBarTitleText": "专题专栏",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  },
+	  {
+		  "path": "pages/myDept/index",
+		  "style": {
+			  "navigationBarTitleText": "我的支部",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  },
+	  {
+		  "path": "pages/PartyWork/index",
+		  "style": {
+			  "navigationBarTitleText": "党费统计",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  },
+	  {
+		  "path": "pages/partyFee/index",
+		  "style": {
+			  "navigationBarTitleText": "党费缴纳",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  },
+	  {
+		  "path": "pages/NewsBulletin/list",
+		  "style": {
+			  "navigationBarTitleText": "新闻动态",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  },
+	  {
+		  "path": "pages/User/loginOpenId",
+		  "style": {
+			  "navigationBarTitleText": "登录绑定",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  },
+	  {
+		  "path": "pages/new/list",
+		  "style": {
+			  "navigationBarTitleText": "新闻",
+			  "enablePullDownRefresh": false,
+			  "navigationStyle": "custom"
+		  }
+	  }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "color": "#000",
+    "selectColor": "#ff0000",
+    "fontSize": "30rpx",
+    "height": "80rpx",
+    "list": [
+      /*{
+        "text": "首页",
+        "pagePath": "pages/Home/Home"
+      },
+      {
+        "text": "应用",
+        "pagePath": "pages/Application/Application"
+      },
+      {
+        "text": "学习",
+        "pagePath": "pages/Study/Study"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/User/User"
+      }*/
+    ]
+  }
+}

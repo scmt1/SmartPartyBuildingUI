@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <script src="https://map.qq.com/api/gljs?v=2.exp&key=APOBZ-3ZLWX-GZQ45-72ZF3-2M6R6-IDFHH"></script>
+    <script src="static/autosize.js"></script>
+</head>
+<!--<script src="https://map.qq.com/api/gljs?v=1.exp&key=ZBBZ-*********-N563Z-ISDSD5"></script>-->
+<body>
+<noscript>
+  <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<!--<div id="app"></div>-->
+</body>
+<style type="text/css">
+  #loading-wrap {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  #loading-wrap .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px #41B883 solid;
+    border-right: 3px solid transparent;
+    border-top: 3px solid transparent;
+    animation: loading 1.5s linear infinite;
+  }
+
+  #loading-wrap .loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px #41B883 solid;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    animation: after 0.75s linear infinite;
+  }
+
+  #loading-wrap .loading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px #41B883 solid;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    animation: before 8s linear infinite;
+  }
+
+
+  @keyframes loading {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(0);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+  }
+
+  @keyframes after {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) rotateZ(0);
+    }
+  }
+
+  @keyframes before {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) rotateZ(0);
+    }
+  }
+</style>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please
+        enable it to continue.</strong>
+  </noscript>
+  <div id="loading-wrap">
+    <div class="loading"></div>
+  </div>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

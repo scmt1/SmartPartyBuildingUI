@@ -1,0 +1,35 @@
+{
+    "pages": [],
+    "globalStyle": {},
+    "tabBar": {},
+    "mp-weixin": {
+        "style": {
+            "rpxUnit": "rpx"
+        }
+    },
+    "mp-alipay": {
+        "style": {
+            "rpxUnit": "rpx"
+        }
+    },
+    "mp-baidu": {
+        "style": {
+            "rpxUnit": "rpx"
+        }
+    },
+    "mp-toutiao": {
+        "style": {
+            "rpxUnit": "rpx"
+        }
+    },
+    "mp-qq": {
+        "style": {
+            "rpxUnit": "rpx"
+        }
+    },
+    "app-plus": {
+        "style": {
+            "rpxUnit": "rpx"
+        }
+    }
+}
